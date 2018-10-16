@@ -1,6 +1,12 @@
 -- 0. Get all users from Chicago.
+-- SELECT * FROM accounts WHERE city = 'chicago';
+
 -- 1. Get all users with usernames that contain the letter a.
+-- SELECT * FROM accounts WHERE username LIKE '%a%'
+
 -- 2. The bank is giving a new customer bonus! Update all records with an account balance of 0.00 and a transactions_attempted of 0. Give them a new account balance of 10.00.
+-- UPDATE account SET account_balance = 10 WHERE transactions_attempted = 0, account_balance = 0;
+
 -- 3. Select all users that have attempted 9 or more transactions.
 -- 4. Get the username and account balance of the 3 users with the highest balances, sort highest to lowest balance. NOTE: Research LIMIT
 -- 5. Get the username and account balance of the 3 users with the lowest balances, sort lowest to highest balance.
