@@ -5,7 +5,7 @@ SELECT * FROM accounts WHERE city = 'chicago';
 SELECT * FROM accounts WHERE username LIKE '%a%';
 
 -- 2. The bank is giving a new customer bonus! Update all records with an account balance of 0.00 and a transactions_attempted of 0. Give them a new account balance of 10.00.
-UPDATE accounts SET account_balance = 10 WHERE transactions_attempted = 0 AND account_balance = 0;
+UPDATE accounts SET account_balance = 10.00 WHERE transactions_attempted = 0 AND account_balance = 0;
 
 -- 3. Select all users that have attempted 9 or more transactions.
 SELECT * FROM accounts WHERE transactions_attempted > 9;
